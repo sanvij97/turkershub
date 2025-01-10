@@ -41,31 +41,38 @@
     <div class="contact-container">
         <h1>Contact Us</h1>
         <p>Got Questions or Feedback? We’re Here to Help!</p>
-        <p>Your experience matters to us at TurkersHub. Let’s connect and make your MTurk journey even more rewarding!
-        </p>
-
+        <p>Your experience matters to us at TurkersHub. Let’s connect and make your MTurk journey even more rewarding!</p>
+        
         <h2>Reach Us Anytime!</h2>
         <div class="contact-options">
             <div>
                 📧 <strong>Email Us:</strong> <a href="mailto:turkershub@gmail.com">turkershub@gmail.com</a>
             </div>
         </div>
-
+        
         <h2>Send Us a Message!</h2>
         <div class="contact-form">
             <form action="https://formspree.io/f/mdkkygjw" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Your Subject">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                
+                <button type="submit">Submit Your Message</button>
             </form>
         </div>
+        
+        <h2>Support Hours</h2>
+        <p>🕒 <strong>24/7</strong></p>
+        <p>📆 <strong>All Days:</strong>Excluding International Holidays</p>
+    </div>
 
         <!-- Footer Section -->
         <footer>
