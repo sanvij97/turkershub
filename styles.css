@@ -243,7 +243,6 @@ p.contact-container {
     background-color: #45a049;
 }
 
-/* Tips page */
 #mturk-tips {
     background: linear-gradient(to right, #141e30, #243b55);
     padding: 40px 20px;
@@ -259,9 +258,11 @@ p.contact-container {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
+
 .tips-container p {
     color: white;
 }
+
 .tips-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -294,4 +295,50 @@ p.contact-container {
 
 .tip-item ul li strong {
     color: #0c0fb9;
+}
+
+/* Mobile & Tablet View */
+@media screen and (max-width: 768px) {
+    .tips-list {
+        grid-template-columns: 1fr;  /* Stack the columns on small screens */
+    }
+
+    .tip-item {
+        padding: 15px;
+    }
+
+    .tip-item h3 {
+        font-size: 1.4em;
+    }
+
+    .tip-item ul li {
+        font-size: 1em;
+    }
+
+    .tips-container {
+        padding: 20px;
+    }
+
+    #mturk-tips {
+        padding: 30px 15px;
+    }
+}
+
+/* Large Desktop View (for wider screens) */
+@media screen and (min-width: 1200px) {
+    .tips-list {
+        grid-template-columns: 1fr 1fr 1fr;  /* Increase the columns for larger screens */
+    }
+
+    .tip-item {
+        padding: 25px;
+    }
+
+    .tip-item h3 {
+        font-size: 1.8em;
+    }
+
+    .tip-item ul li {
+        font-size: 1.2em;
+    }
 }
