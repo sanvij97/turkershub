@@ -242,3 +242,56 @@ p.contact-container {
 .contact-form button:hover {
     background-color: #45a049;
 }
+
+/* Tips page */
+#mturk-tips {
+    background: linear-gradient(to right, #141e30, #243b55);
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.tips-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: rgba(42, 218, 241, 0.144);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.tips-container p {
+    color: white;
+}
+.tips-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tip-item {
+    background: linear-gradient(135deg, #d0db66, #da7a3b);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tip-item h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tip-item ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+.tip-item ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.tip-item ul li strong {
+    color: #0c0fb9;
+}
