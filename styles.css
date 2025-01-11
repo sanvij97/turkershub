@@ -19,15 +19,15 @@ header {
 }
 
 header .logo img {
-    width: 100px;
+    width: 80px;    
 }
-
 header .company-name h1 {
     font-size: 1.8em;
     color: #fff;
 }
 
 header .company-name p {
+    padding: 0 30px;
     font-size: 1em;
     color: black;
     font-weight: bolder;
