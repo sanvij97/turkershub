@@ -37,7 +37,7 @@ nav {
     padding: 10px 0;
     text-align: center;
     color: white;
-    justify-content:space-around;
+    justify-content:space-evenly;
 }
 
 nav ul {
