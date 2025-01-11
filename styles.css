@@ -478,6 +478,25 @@ table {
     background-color: #f1f1f1;
   }
   
+  /* Enhanced Search Box Styling */
+  #searchBox {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #78d6e2;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+  
+  #searchBox:focus {
+    border-color: #45aaf2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
   /* Responsive Table Styling */
   @media (max-width: 768px) {
     table, thead, tbody, th, td, tr {
@@ -521,4 +540,44 @@ table {
       white-space: nowrap;
     }
   }
+
+  .demo h2 {
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+  /* Container to handle overflow */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  }
   
+  /* Styling the table */
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Table styling */
+  table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* For small screens (e.g., mobile view) */
+  @media (max-width: 600px) {
+    table, th, td {
+      font-size: 12px; /* Make text smaller */
+    }
+    th, td {
+      padding: 6px; /* Reduce padding for more compact layout */
+    }
+  }
