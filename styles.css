@@ -10,8 +10,8 @@ body {
 
 header {
     background: linear-gradient(180deg, #393a39, #c1c3c4);
-    height: fit-content;
-    padding: 15px;
+    height: 6em;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
