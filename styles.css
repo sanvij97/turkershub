@@ -265,14 +265,16 @@ footer ul li a:hover {
 
 /* Tips Page */
 #mturk-tips {
-    background: linear-gradient(to right, #141e30, #243b55);
+    background: linear-gradient(to right, #cdd9f0, #9da1a7);
     padding: 40px 20px;
 }
-
+#mturk-tips p {
+    font-weight: bold;
+}
 .tips-container {
     max-width: 1300px;
     margin: 0 auto;
-    background-color: rgba(42, 218, 241, 0.144);
+    background-color: rgba(3, 151, 11, 0.144);
     border-radius: 10px;
     padding: 30px;
 }
@@ -284,7 +286,7 @@ footer ul li a:hover {
 }
 
 .tip-item {
-    background: linear-gradient(135deg, #d0db66, #da7a3b);
+    background: linear-gradient(135deg, #d0db66, #d6cec9);
     border-radius: 8px;
     padding: 20px;
 }
