@@ -591,3 +591,48 @@ table {
       padding: 6px; /* Reduce padding for more compact layout */
     }
   }
+
+
+
+
+  /* Privacy Policy Styling */
+.privacy-pol {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .privacy-pol h1, .privacy-pol h2 {
+    color: #333;
+  }
+  
+  .privacy-pol p, .privacy-pol ul {
+    color: #555;
+  }
+  
+  .privacy-pol ul {
+    padding-left: 20px;
+  }
+  
+  .privacy-pol ul li {
+    margin: 5px 0;
+  }
+  
+  /* For mobile screens (max width 600px) */
+  @media (max-width: 600px) {
+    .privacy-pol {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .privacy-pol h1 {
+      font-size: 24px;
+    }
+  
+    .privacy-pol h2 {
+      font-size: 20px;
+    }
+  }
