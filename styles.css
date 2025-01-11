@@ -399,8 +399,8 @@ footer ul li a:hover {
 
 /* Style for the warning class, responsive for PC and mobile */
 .warning {
-    background-color: #fff3cd; /* Soft yellow background for warning */
-    color: #856404; /* Dark golden text color for visibility */
+    background-color: #e4d4a1; /* Soft yellow background for warning */
+    color: #050505; /* Dark golden text color for visibility */
     border: 1px solid #ffeeba; /* Subtle border matching background */
     padding: 15px 20px;
     border-radius: 8px;
