@@ -106,9 +106,33 @@ nav ul li a:hover {
 
   .feature-cards {
     display: flex;
-    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center; /* Center items for better alignment */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+  /* Style individual cards for better responsiveness */
+  .feature-cards > .card {
+    flex: 1 1 300px; /* Grow, shrink, and have a minimum width of 300px */
+    max-width: 400px; /* Prevent cards from becoming too wide on large screens */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 600px) {
+    .feature-cards {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 15px; /* Smaller gap on mobile */
+    }
+  
+    .feature-cards > .card {
+      width: 100%; /* Full width on small screens */
+      flex: none;
+    }
   }
 
   .feature-card {
