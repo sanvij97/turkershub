@@ -471,11 +471,11 @@ table {
   }
   
   tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #faf4f4;
   }
   
   tr:hover {
-    background-color: #f1f1f1;
+    background-color: #7ba5f1;
   }
   
   /* Enhanced Search Box Styling */
@@ -543,6 +543,14 @@ table {
 
   .demo h2 {
     text-align: center;
+  }
+  .demo ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .demo p {
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 
