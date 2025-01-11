@@ -397,3 +397,33 @@ footer ul li a:hover {
     text-align: center;
 }
 
+/* Style for the warning class, responsive for PC and mobile */
+.warning {
+    background-color: #fff3cd; /* Soft yellow background for warning */
+    color: #856404; /* Dark golden text color for visibility */
+    border: 1px solid #ffeeba; /* Subtle border matching background */
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+  }
+  
+  /* Adjustments for mobile devices */
+  @media (max-width: 600px) {
+    .warning {
+      font-size: 14px; /* Smaller font size for smaller screens */
+      padding: 10px 15px;
+      line-height: 1.4;
+    }
+  }
+  
+  /* Adjustments for larger screens */
+  @media (min-width: 1200px) {
+    .warning {
+      font-size: 18px; /* Slightly larger text for desktops */
+      padding: 20px 25px;
+    }
+  }
