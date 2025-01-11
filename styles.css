@@ -11,7 +11,7 @@ body {
 header {
     background: linear-gradient(180deg, #393a39, #c1c3c4);
     height: 6em;
-    padding: 15px 0;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,9 @@ header .company-name h1 {
 
 header .company-name p {
     font-size: 1em;
-    color: #10da21;
+    color: black;
+    font-weight: bolder;
+    font-family: serif;
 }
 
 nav {
@@ -37,13 +39,12 @@ nav {
     padding: 10px 0;
     text-align: center;
     color: white;
-    justify-content:space-evenly;
 }
 
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -68,6 +69,10 @@ nav ul li a:hover {
 #mturk-content {
     padding: 60px 20px;
 }
+.content-wrapper {
+    text-align: center;
+}
+
 
 h1 {
     font-size: 2em;
@@ -87,7 +92,7 @@ h3 {
 .feature-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     margin-top: 30px;
 }
@@ -109,17 +114,6 @@ h3 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
-
-.mturt-tips ul, .mturt-tools ul, .success-stories .story-cards {
-    list-style: none;
-    padding: 0;
-}
-
-.mturt-tips ul li, .mturt-tools ul li, .success-stories .story-card {
-    margin-bottom: 15px;
-    font-size: 1.2em;
-}
-
 .cta {
     text-align: center;
     margin: 40px 0;
