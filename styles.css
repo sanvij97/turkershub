@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Optimized Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -8,13 +8,14 @@ body {
     line-height: 1.6;
 }
 
+/* Responsive Header */
 header {
     background: linear-gradient(180deg, #393a39, #c1c3c4);
-    height: 6em;
+    height: auto;
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -26,31 +27,23 @@ header .company-name h1 {
     color: #fff;
 }
 
-header .company-name p {
-    font-size: 1em;
-    color: black;
-    font-weight: bolder;
-    font-family: serif;
-}
-
+/* Responsive Navigation */
 nav {
     background-color: rgba(53, 50, 50, 0.7);
     padding: 10px 0;
     text-align: center;
-    color: white;
 }
 
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -58,174 +51,86 @@ nav ul li a {
     text-decoration: none;
     font-size: 1em;
     text-transform: uppercase;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
     color: #ffeb3b;
 }
 
-#mturk-content {
-    padding: 0 20px;
-}
-
-.content-wrapper h1 {
-    font-size: 1.8em;
+/* Content Styling */
+.content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
-}
-.content-wrapper p{
-    text-align: center;
-    font-size: 1.1em;
 }
 
-.content-wrapper h2 {
-    font-size: 1.8em;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.content-wrapper h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
+/* Improved Features Section */
 .features {
     background-color: #ffffff;
     padding: 40px 20px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+}
 
-  .features h2 {
+.features h2 {
     font-size: 28px;
     color: #333;
-    margin-bottom: 20px;
-  }
+}
 
-  .feature-cards {
+.feature-cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center; /* Center items for better alignment */
-    padding: 10px; /* Add padding for spacing */
-  }
-  
-  /* Style individual cards for better responsiveness */
-  .feature-cards > .card {
-    flex: 1 1 300px; /* Grow, shrink, and have a minimum width of 300px */
-    max-width: 400px; /* Prevent cards from becoming too wide on large screens */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px;
-    background-color: #fff;
-  }
-  
-  /* Mobile view adjustments */
-  @media (max-width: 600px) {
-    .feature-cards {
-      flex-direction: column; /* Stack cards vertically */
-      gap: 15px; /* Smaller gap on mobile */
-    }
-  
-    .feature-cards > .card {
-      width: 100%; /* Full width on small screens */
-      flex: none;
-    }
-  }
+    justify-content: center;
+    padding: 10px;
+}
 
-  .feature-card {
+.feature-card {
     background-color: #36e4e4;
     border-radius: 8px;
     padding: 20px;
     width: 280px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-  }
+}
 
-  .feature-card:hover {
+.feature-card:hover {
     transform: translateY(-5px);
-  }
+}
 
-  .feature-card i {
-    font-size: 40px;
-    color: #007BFF;
-    margin-bottom: 10px;
-  }
+/* Tables Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .feature-card h3 {
-    font-size: 20px;
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #78d6e2;
     color: #333;
-    margin-bottom: 10px;
-  }
-
-  .feature-card p {
-    font-size: 14px;
-    color: #555;
-  }
-
-  @media (max-width: 768px) {
-    .feature-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-    .feature-card {
-      width: 90%;
-    }
-  }
-
-.icon {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-.cta {
-    text-align: center;
-    margin: 40px 0;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
 }
 
-.cta-button {
-    background-color: #ffeb3b;
-    padding: 10px 30px;
-    font-size: 1em;
-    text-decoration: none;
-    color: #000;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+tr:nth-child(even) {
+    background-color: #faf4f4;
 }
 
-.cta-button:hover {
-    background-color: #ffc107;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 10px;
-    color: #fff;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    color: #ffeb3b;
+tr:hover {
+    background-color: #7ba5f1;
 }
 
 /* Contact Form */
 .contact-container {
-    color: black;
     max-width: 100%;
     margin: 20px auto;
     background: linear-gradient(to left, #FBC8A5, #A1C4E9);
@@ -262,376 +167,28 @@ footer ul li a:hover {
     background-color: #45a049;
 }
 
-/* Tips Page */
-#mturk-tips {
-    background: linear-gradient(to right, #cdd9f0, #9da1a7);
-    padding: 40px 20px;
-}
-#mturk-tips p {
-    font-weight: bold;
-}
-.tips-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    background-color: rgba(3, 151, 11, 0.144);
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.tips-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.tip-item {
-    background: linear-gradient(135deg, #d0db66, #d6cec9);
-    border-radius: 8px;
-    padding: 20px;
-}
-
-/* Mobile & Tablet View */
-@media screen and (max-width: 768px) {
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
     }
 
-    header .logo img {
-        width: 80px;
-    }
-
-    header .company-name h1 {
-        font-size: 1.5em;
+    nav ul {
+        flex-direction: column;
     }
 
     nav ul li {
-        margin: 5px 10px;
+        margin: 5px 0;
     }
 
     .feature-card {
-        width: 100%;
-    }
-
-    .cta-button {
-        font-size: 0.9em;
-        padding: 8px 20px;
-    }
-
-    .contact-container {
-        padding: 15px;
-    }
-
-    .tips-container {
-        padding: 15px;
-    }
-
-    #mturk-content {
-        padding: 40px 15px;
+        width: 90%;
     }
 }
 
-/* Large Desktop View */
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .feature-card {
         width: 30%;
     }
-
-    .tips-list {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
-
-/* Mturk-Scripts section */
-
-  .mturk-scripts {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    max-width: 900px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .mturk-scripts h2, .mturk-scripts h3 {
-    color: #333;
-    margin-top: 20px;
-  }
-
-  .mturk-scripts ul, .mturk-scripts ol {
-    padding-left: 20px;
-  }
-
-  .mturk-scripts a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-
-  .mturk-scripts a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 600px) {
-    .mturk-scripts {
-      padding: 15px;
-      font-size: 14px;
-    }
-
-    .mturk-scripts h2 {
-      font-size: 20px;
-    }
-
-    .mturk-scripts h3 {
-      font-size: 16px;
-    }
-  }
-
-
-
-.mturk-tools h2 {
-    text-align: center;
-}
-.mturk-tools p {
-    text-align: center;
-}
-
-/* Style for the warning class, responsive for PC and mobile */
-.warning {
-    background-color: #e4d4a1; /* Soft yellow background for warning */
-    color: #050505; /* Dark golden text color for visibility */
-    border: 1px solid #ffeeba; /* Subtle border matching background */
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-  }
-  
-  /* Adjustments for mobile devices */
-  @media (max-width: 600px) {
-    .warning {
-      font-size: 14px; /* Smaller font size for smaller screens */
-      padding: 10px 15px;
-      line-height: 1.4;
-    }
-  }
-  
-  /* Adjustments for larger screens */
-  @media (min-width: 1200px) {
-    .warning {
-      font-size: 18px; /* Slightly larger text for desktops */
-      padding: 20px 25px;
-    }
-  }
-
-/* Other qual table */
-/* General Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  th, td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: left;
-    word-wrap: break-word;
-  }
-  
-  th {
-    background-color: #78d6e2;
-    color: #333;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  th::after {
-    content: '\25B4'; /* Up arrow */
-    position: absolute;
-    right: 10px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  th.sort-asc::after {
-    content: '\25B2'; /* Solid up arrow */
-    opacity: 1;
-  }
-  
-  th.sort-desc::after {
-    content: '\25BC'; /* Solid down arrow */
-    opacity: 1;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #faf4f4;
-  }
-  
-  tr:hover {
-    background-color: #7ba5f1;
-  }
-  
-  /* Enhanced Search Box Styling */
-  #searchBox {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 20px auto;
-    display: block;
-    border: 2px solid #78d6e2;
-    border-radius: 25px;
-    font-size: 16px;
-    outline: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease-in-out;
-  }
-  
-  #searchBox:focus {
-    border-color: #45aaf2;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Responsive Table Styling */
-  @media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
-  
-    thead tr {
-      display: none;
-    }
-  
-    tr {
-      margin-bottom: 15px;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-      padding: 10px;
-      background-color: #fff;
-    }
-  
-    td {
-      text-align: right;
-      padding-left: 50%;
-      position: relative;
-    }
-  
-    td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 15px;
-      width: 45%;
-      padding-right: 10px;
-      font-weight: bold;
-      text-align: left;
-      color: #333;
-    }
-  }
-  
-  /* Scrollable Table for Smaller Screens */
-  @media (max-width: 600px) {
-    .scrollable-table {
-      overflow-x: auto;
-      display: block;
-      white-space: nowrap;
-    }
-  }
-
-  .demo h2 {
-    text-align: center;
-  }
-  .demo ul {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  .demo p {
-    text-align: center;
-    font-size: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
-
-
-
-
-
-
-
-  /* Container to handle overflow */
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling if needed */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
-  }
-  
-  /* Styling the table */
-  .table-container table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  /* Table styling */
-  table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  /* For small screens (e.g., mobile view) */
-  @media (max-width: 600px) {
-    table, th, td {
-      font-size: 12px; /* Make text smaller */
-    }
-    th, td {
-      padding: 6px; /* Reduce padding for more compact layout */
-    }
-  }
-
-
-
-
-  /* Privacy Policy Styling */
-.privacy-pol {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  .privacy-pol h1, .privacy-pol h2 {
-    color: #333;
-  }
-  
-  .privacy-pol p, .privacy-pol ul {
-    color: #555;
-  }
-  
-  .privacy-pol ul {
-    padding-left: 20px;
-  }
-  
-  .privacy-pol ul li {
-    margin: 5px 0;
-  }
-  
-  /* For mobile screens (max width 600px) */
-  @media (max-width: 600px) {
-    .privacy-pol {
-      padding: 10px;
-      font-size: 14px;
-    }
-  
-    .privacy-pol h1 {
-      font-size: 24px;
-    }
-  
-    .privacy-pol h2 {
-      font-size: 20px;
-    }
-  }
